@@ -1,0 +1,37 @@
+.card_project {
+  height: 300px;
+}
+.pretitle {
+  margin-bottom: 1rem;
+
+}
+.pretitle span a:hover{
+  transition: 0.5s;
+  color: #27AE60;
+}
+.pretitle span a i {font-size: 2.5rem;}
+.pretitle span:nth-child(2){
+  margin-left: 1rem;
+
+}
+.title span{
+  letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 480px) {
+  .card_project {
+    height: 200px;
+  }
+  .card_project img{
+    height: 250px;
+    width: 100%;
+  }
+  .pretitle {
+    margin-bottom: 0.7rem;
+  
+  }
+  .pretitle span a i {font-size: 1.7rem;}
+  .title span {
+    font-size: 1.7rem !important;
+    font-weight: 600 !important;
+  }
+} 
