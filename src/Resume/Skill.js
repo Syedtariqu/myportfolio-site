@@ -1,20 +1,7 @@
 import React from 'react'
 import "./Skill.css"
 import { motion } from "framer-motion"
-const htmlvariants = {
-  hidden: {
-    width: 0,
-  },
-  visible: {
-    width: "80%",
-    transition: {
-      delay: 0.2,
-      duration: 1,
-      type: "spring",
-    }
-  }
-}
-const cssvariants = {
+const jsvariants = {
   hidden: {
     width: 0,
   },
@@ -27,7 +14,20 @@ const cssvariants = {
     }
   }
 }
-const jsvariants = {
+const njsvariants = {
+  hidden: {
+    width: 0,
+  },
+  visible: {
+    width: "60%",
+    transition: {
+      delay: 0.2,
+      duration: 1,
+      type: "spring",
+    }
+  }
+}
+const mdbvariants = {
   hidden: {
     width: 0,
   },
@@ -53,12 +53,12 @@ const reactvariants = {
     }
   }
 }
-const fmvariants = {
+const htmlvariants = {
   hidden: {
     width: 0,
   },
   visible: {
-    width: "70%",
+    width: "80%",
     transition: {
       delay: 0.2,
       duration: 1,
@@ -78,30 +78,30 @@ const Skill = () => {
         <div className="skills_main">
           <div className="skill_bar">
             <div className="info">
-              <h4>Html</h4>
-              <h4>80%</h4>
+              <h4>Javascript</h4>
+              <h4>70%</h4>
             </div>
             <div className="bar">
-              <motion.span variants={htmlvariants} initial="hidden" whileInView="visible" className="html"></motion.span>
+              <motion.span variants={jsvariants} initial="hidden" whileInView="visible" className="js"></motion.span>
             </div>
           </div>
           <div className="skill_bar">
             <div className="info">
-              <h4>Css</h4>
-              <h4>70%</h4>
+              <h4>Node js</h4>
+              <h4>60%</h4>
             </div>
             <div className="bar">
-              <motion.span variants={cssvariants} initial="hidden" whileInView="visible" className="css"></motion.span>
+              <motion.span variants={njsvariants} initial="hidden" whileInView="visible" className="njs"></motion.span>
             </div>
           </div>
 
           <div className="skill_bar">
             <div className="info">
-              <h4>Java Script</h4>
+              <h4>Mongodb</h4>
               <h4>60%</h4>
             </div>
             <div className="bar">
-              <motion.span variants={jsvariants} initial="hidden" whileInView="visible" className="js"></motion.span>
+              <motion.span variants={mdbvariants} initial="hidden" whileInView="visible" className="mdb"></motion.span>
             </div>
           </div>
           <div className="skill_bar">
@@ -115,11 +115,11 @@ const Skill = () => {
           </div>
           <div className="skill_bar">
             <div className="info">
-              <h4>Framer Motion</h4>
-              <h4>70%</h4>
+              <h4>Html</h4>
+              <h4>80%</h4>
             </div>
             <div className="bar">
-              <motion.span variants={fmvariants} initial="hidden" whileInView="visible" className="fm"></motion.span>
+              <motion.span variants={htmlvariants} initial="hidden" whileInView="visible" className="fm"></motion.span>
             </div>
           </div>
 

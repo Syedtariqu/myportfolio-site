@@ -42,8 +42,8 @@ const About = () => {
                     whileInView="visible">
                     Hi there!
                     I'm Syed Tarique Abedin ,
-                    I'm a third year B.Tech CSE student of Netaji Subhash Engineering College .
-                    Currently I'm a FrontEnd Developer... I have hunger to learn new things to improve my skills . To know more about my skills download my Resume . 
+                    I'm a 4th year B.Tech CSE student of Netaji Subhash Engineering College .
+                    I'm a MERN stack Developer... looking forward to explore the IT field. To know more about my skills download my Resume . 
                   </motion.h2>
                   <div className=' mt-3'>
                   <a href="SYED's Resume.pdf" download="SYED's Resume.pdf">

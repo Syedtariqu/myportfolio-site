@@ -4,6 +4,7 @@ import './Project.css'
 import im5 from "../assets/Home/deliciousss.png";
 import im4 from "../assets/Home/Resturent_1.png";
 import im3 from "../assets/Home/multimart.png";
+import im6 from "../assets/Home/memory.png";
 import Projects from "./Projects";
 const Project = () => {
   const github ={
@@ -13,6 +14,8 @@ const Project = () => {
     name2_site : "https://resturantfav.netlify.app/",
     name3: "Multimart-website",
     name3_site : "https://multimart-website.netlify.app/",
+    name4: "Memory-MernApp",
+    name4_site : "https://memorycreator.netlify.app/",
     
   }
   return (
@@ -31,7 +34,8 @@ const Project = () => {
             </div>
             <div className="flex-1  flex flex-col gap-y-12">
               <Projects img={im3} github={github.name3} site={github.name3_site}/>
-              <Projects img={im5}/>
+              <Projects img={im6} github={github.name4} site={github.name4_site}/>
+              
             </div>
           </div>
         </div>
